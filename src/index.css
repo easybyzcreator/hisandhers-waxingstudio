@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference');
+
+@theme {
+  --font-sans: "Teachers", "Glacial Indifference", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Teachers", "Glacial Indifference", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  font-family: 'Teachers', 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  font-family: 'Teachers', 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-color, #111827);
+  background-color: #ece6db;
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, select {
+  font-family: 'Teachers', 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #111827; /* Force dark text for form input fields */
+}
+
+.glass {
+  @apply backdrop-blur-lg border border-white/20;
+  background-color: var(--glass-color, rgba(255, 255, 255, 0.4));
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Teachers', 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-color, #111827);
+}
